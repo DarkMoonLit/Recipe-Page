@@ -9,17 +9,19 @@
     src: url(https://fonts.google.com/specimen/Outfit);
 }
 
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
 
 img {
     width: 100%;
-    
+    border-radius: 10px;
 }
 
 body {
-    
-    background-color: hsl(30, 54%, 90%);
+    background-color: hsl(30, 44%, 90%);
     height: 100vh;
-    
 }
 
 .container {
@@ -29,12 +31,14 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    line-height: 1.6;    
+    line-height: 1.6;
+    border-radius: 10px;
 }
 
 .duration {
     background-color: hsl(330, 100%, 98%);
     padding: 10px;
+    margin-top: 1rem;
 }
 
 h3 {
@@ -50,10 +54,15 @@ p, li {
     color: hsl(30, 10%, 34%);
 }
 
+li {
+    line-height: 2.2;
+}
+
 h2 {
     color: hsl(14, 45%, 36%);
     font-family: 'Outfit';
     font-weight: 700;
+    margin-top: 1rem;
 }
 
 h1 {
@@ -61,10 +70,12 @@ h1 {
     color: hsl(24, 5%, 18%);
 }
 
-.row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 20%;
+td, tr, table {
+    padding: 10px 150px 15px 10px;
+    border-bottom: 1px solid hsl(30, 11%, 75%);
+    border-collapse: collapse;
+    color: hsl(30, 10%, 34%);
+    margin: 1rem;  
 }
 
 .measure {
@@ -90,14 +101,59 @@ h1 {
     }
 }
 
+@media screen and (max-width: 600px) {
+    img {
+        min-width: 100%;  
+        object-fit: fill;  
+        padding: 0;
+        margin: 0;
+    }
+    .container {
+        margin: 0%;    
+    }
+}
+
+@media screen and (min-width: 600px) {
+    img {
+        min-width: 75%;    
+    }
+
+    .container {
+        width: 50%;
+        margin: 5rem 23%;
+    }
+
+    td, tr, table {
+        padding: 10px 60px 10px 5px;
+    }
+}
+
 @media screen and (min-width: 800px) {
     img {
         min-width: 75%;    
     }
 
     .container {
-        width: 65%;
-        margin-left: 18%;
+        width: 50%;
+        margin-left: 25%;
+    }
+    td, tr, table {
+        padding: 10px 120px 10px 5px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    img {
+        min-width: 75%;    
+    }
+
+    .container {
+        width: 50%;
+        margin-left: 27%;    
+    }
+
+    td, tr, table {
+        padding: 10px 160px 10px 5px;
     }
 }
 
@@ -108,6 +164,9 @@ h1 {
 
     .container {
         width: 50%;
-        margin-left: 22%;
+        margin-left: 25%;
+    }
+    td, tr, table {
+        padding: 10px 250px 10px 5px;
     }
 }
