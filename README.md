@@ -32,9 +32,10 @@ This project is a recipe page using HTML, CSS, FlexBox and Grid.
 
 ### What I learned
 This project was quite a challenge since I worked on the different layouts for the screen size so that it is much more of a smooth transition. 
+From feedback received, I was able to change the nutrition section to a table and edit the margin, padding and some CSS properties.
 
 ### Continued development
-There should be a better way to use media queries for the smooth transition to the different screen layouts.
+There should be a better way to use media queries for the smooth transition to the different screen layouts. Learn more about table responsivity and image.
 
 ### Useful resources
 
